@@ -1,0 +1,102 @@
+<!-- Salve este arquivo como galeria.html dentro de C:\Users\lucia\Galeriadeprofessores\html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeria de Professores</title>
+    <style>
+        :root{
+            --bg:#f7f7fb; --card:#fff; --accent:#2b6cb0; --muted:#6b7280;
+            --gap:1rem;
+        }
+        body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111}
+        header{background:linear-gradient(90deg, #ffffffcc, #f0f6ff);border-bottom:1px solid #e6eaf0;padding:1rem 1.25rem;position:sticky;top:0;z-index:10}
+        .container{max-width:1100px;margin:0 auto;padding:1rem}
+        nav{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+        .brand{font-weight:700;color:var(--accent)}
+        .nav-links{display:flex;gap:.75rem}
+        .nav-links a{color:var(--accent);text-decoration:none;padding:.35rem .6rem;border-radius:.35rem}
+        .nav-links a:hover{background:#eaf3ff}
+        main{padding:1rem 0}
+        .hero{background:var(--card);padding:1rem;border-radius:8px;margin-bottom:var(--gap);box-shadow:0 1px 2px rgba(16,24,40,.04)}
+        .hero h1{margin:.25rem 0;font-size:1.4rem}
+        .hero p{margin:0;color:var(--muted);font-size:.95rem}
+        section {margin-top:var(--gap)}
+        #gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:var(--gap)}
+        .card{background:var(--card);border-radius:8px;overflow:hidden;text-align:center;box-shadow:0 6px 18px rgba(15,23,42,.06)}
+        .card a{display:block;color:inherit;text-decoration:none}
+        .card img{width:100%;height:210px;object-fit:cover;display:block}
+        .card figcaption{padding:.6rem .75rem;font-size:.95rem}
+        footer{padding:1rem 0;color:var(--muted);font-size:.9rem;text-align:center}
+        @media (max-width:420px){
+            .card img{height:160px}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">Galeria de Professores</div>
+                <div class="nav-links">
+                    <a href="#home">Página Inicial</a>
+                    <a href="#about">Sobre</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero" aria-labelledby="home-title">
+            <h1 id="home-title">Bem-vindo à Galeria</h1>
+            <p>Selecione um professor abaixo para ver a página dedicada a ele. Clique na foto ou no nome.</p>
+        </section>
+
+        <section id="gallery-section" aria-labelledby="gallery-title">
+            <h2 id="gallery-title" style="margin:0 0 .5rem 0">Professores</h2>
+
+            <div id="gallery">
+                <!-- Repita / ajuste estes blocos para cada professor -->
+                <figure class="card">
+                    <a href="professor-1.html" title="Ver página do Professor 1">
+                        <img src="images/prof1.jpg" alt="Professor João Silva" loading="lazy">
+                        <figcaption>Prof. João Silva<br><small style="color:var(--muted)">Matemática</small></figcaption>
+                    </a>
+                </figure>
+
+                <figure class="card">
+                    <a href="professor-2.html" title="Ver página da Professora 2">
+                        <img src="images/prof2.jpg" alt="Professora Maria Souza" loading="lazy">
+                        <figcaption>Profª Maria Souza<br><small style="color:var(--muted)">Português</small></figcaption>
+                    </a>
+                </figure>
+
+                <figure class="card">
+                    <a href="professor-3.html" title="Ver página do Professor 3">
+                        <img src="images/prof3.jpg" alt="Professor Carlos Pereira" loading="lazy">
+                        <figcaption>Prof. Carlos Pereira<br><small style="color:var(--muted)">História</small></figcaption>
+                    </a>
+                </figure>
+
+                <figure class="card">
+                    <a href="professor-4.html" title="Ver página da Professora 4">
+                        <img src="images/prof4.jpg" alt="Professora Ana Lima" loading="lazy">
+                        <figcaption>Profª Ana Lima<br><small style="color:var(--muted)">Ciências</small></figcaption>
+                    </a>
+                </figure>
+                <!-- Fim dos blocos de exemplo -->
+            </div>
+        </section>
+
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Sobre</h2>
+            <p style="color:var(--muted)">Esta galeria apresenta perfis dos professores. Crie arquivos HTML separados (por exemplo, <code>professor-1.html</code>, <code>professor-2.html</code>, ...) na mesma pasta para que os links funcionem. Coloque as fotos na pasta <code>images/</code>.</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div>© Galeria de Professores</div>
+    </footer>
+</body>
+</html>
