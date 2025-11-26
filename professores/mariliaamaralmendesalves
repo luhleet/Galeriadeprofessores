@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ana Virgínia Pinheiro — Perfil</title>
+    <title> Marilia Amaral Mendes Alves — Perfil</title>
     <style>
         :root{
             --bg:#f7f8fb;
@@ -155,31 +155,31 @@
         <aside class="sidebar" aria-label="Informações pessoais e redes sociais">
             <figure class="photo" aria-hidden="false">
                 <!-- A imagem está na pasta principal `imagens/`; ajustar caminho relativo quando o HTML está em /professores/ -->
-                <img src="../imagens/anavirginiapinheiro.jpg" alt="Foto de Ana Virgínia Pinheiro">
+                <img src="../imagens/mariliaamaral.jpg" alt="Foto de Marília Amaral">
             </figure>
 
-            <h1 id="profile-name" class="name">Ana Virgínia Pinheiro</h1>
+            <h1 id="profile-name" class="name">Marilia Amaral</h1>
             <p class="position">Professora Aposentada — Departamento de Biblioteconomia</p>
 
             <div class="socials" aria-label="Redes sociais">
-                <a href="https://www.instagram.com/anavirginiapinheiro/" title="Instagram — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+                <a href="#" title="Instagram — Marilia Amaral" target="_blank" rel="noopener noreferrer">
                     <!-- Instagram SVG -->
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zM18.6 6.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" /></svg>
                     Instagram
                 </a>
 
-                <a href="https://lattes.cnpq.br/1451014589696902" title="Currículo Lattes — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+                <a href="http://lattes.cnpq.br/3541173335490655" title="Currículo Lattes — Marilia Amaral" target="_blank" rel="noopener noreferrer">
                     <!-- Book icon for Lattes -->
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h10v2H6zM6 8h10v12H6zM3 6v12a1 1 0 0 0 1 1h2V5H4a1 1 0 0 0-1 1z"/></svg>
                     Lattes
                 </a>
 
-                <a href="https://www.linkedin.com/in/anavirginiapinheiro/?originalSubdomain=br" title="LinkedIn - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+                <a href="#" title="LinkedIn - Marilia Amaral" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v11H3zM9 9h3.8v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.8 2.6 4.8 6v6.4H19v-5.7c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V20H9z"/></svg>
                     LinkedIn
                 </a>
 
-                <a href="https://orcid.org/0009-0009-6194-8018" title="ORCID - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+                <a href="#" title="ORCID - Marilia Amaral" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 .001 8.001A4 4 0 0 0 12 8z"/></svg>
                     ORCID
                 </a>
@@ -192,7 +192,7 @@
                 <h2>Biografia</h2>
                 <div class="field">
                     <div class="label">Resumo</div>
-                    <div class="value" id="biography">Bibliotecária, mestre em Administração Pública/FGV, sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB) e diretora de sua Biblioteca. Foi Bibliotecária da Biblioteca Nacional (1982-2020), onde atuou por 16 anos como chefe e curadora de Obras Raras; e Professora da Escola de Biblioteconomia da UNIRIO (1987-2023), onde lecionou, principalmente, História do Livro e das Bibliotecas e Organização e Administração de Bibliotecas. Integra, entre outros, o Grupo de Estudos Interdisciplinares da Raridade Bibliográfica (GEIRD/BA), a Confraria da Conservação e Restauração em Suporte Papel e Afins (SP), e o Grupo de Pesquisa em Critica Textual da Biblioteca Nacional. Dedica-se à mentoria de projetos e pesquisas sobre Memória bibliográfica e documental e à difusão e avaliação do livro raro..</div>
+                    <div class="value" id="biography"> Bibliotecária. Possui graduação em Biblioteconomia e Documentação pela Universidade Santa Úrsula (1967), Especialização em Documentação e Informação (1976) e mestrado em Ciência da Informação (1991) pelo Instituto Brasileiro de Informação em Ciência e Tecnologia. Poeta, contadora de histórias e declamadora. Experiência em gerência de bibliotecas e projetos de criação e reestruturação de bibliotecas. Especialista em promoção da leitura e dinamização de acervos, atuação como pesquisadora da Cátedra UNESCO de Leitura PUC-Rio em 2007-2009. Atuou como professora Adjunta da Escola de Biblioteconomia da Universidade Federal do Estado do Rio de Janeiro (UNIRIO), atuou de 2010 a fevereiro de 2020 como orientadora de Estágio Supervisionado, na área de formação e prática profissional, em Ética Profissional, Leitura, Práticas leitoras e Formação de Leitores, e a partir de 2014, como especialista em Biblioterapia.</div>
                 </div>
             </div>
 
@@ -200,11 +200,11 @@
                 <h2>Datas</h2>
                 <div class="field">
                     <div class="label">Ano de ingresso na universidade</div>
-                    <div class="value" id="data-ingresso">1987</div>
+                    <div class="value" id="data-ingresso">2009</div>
                 </div>
                 <div class="field">
                     <div class="label">Data de aposentadoria</div>
-                    <div class="value" id="data-aposentadoria">14/03/2023</div>
+                    <div class="value" id="data-aposentadoria">12/02/2020</div>
                 </div>
             </div>
 
@@ -213,9 +213,9 @@
                 <div class="field">
                     <div class="label">Entrevistas publicadas</div>
                     <ul class="simple" id="entrevistas">
-                        <li>Entrevista Programa do Jo Soares — https://www.youtube.com/watch?v=c4rms41W_BU</li>
-                        <li>Entrevista O Globo — https://oglobo.globo.com/brasil/conte-algo-que-nao-sei/ana-virginia-pinheiro-bibliotecaria-os-livros-sabem-que-vao-sobreviver-nos-14307624</li>
-                        <li>Entrevista Programa do Jo Soares  — https://globoplay.globo.com/v/904236/título</li>
+                        <li></li>
+                        <li>-</li>
+                        <li>
                     </ul>
                 </div>
             </div>
@@ -225,8 +225,8 @@
                 <div class="field">
                     <div class="label">Participações em podcast</div>
                     <ul class="simple" id="podcasts">
-                        <li>Podcast BiblioOQUE — https://open.spotify.com/episode/4o4nwOAxhDHpFrW8APFVxN</li>
-                        <li>Podcast — https://www.programagw.com.br/2020/12/</li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
@@ -249,29 +249,32 @@
                 <div class="field">
                     <div class="label">Disciplinas lecionadas</div>
                     <div class="value" id="disciplinas">
-                        - Organização e Administração de Bibliotecas
-                        - História do Livro e das Bibliotecas I 
-                        - História do Livro e das Bibliotecas II
-                        - Introdução à Cultura Brasileira
-                        - Introdução à Biblioteconomia
-                        - Classificação Decimal de Dewey e Catálogo Alfabético de Assuntos
-                        - Métodos e Técnicas de Redação Científica
+                        - Estágio Supervisionado I
+                        - Estágio Supervisionado II
+                        - Estágio Supervisionado III
+                        - Estágio Supervisionado IV
+                        - Ética Profissional 
+                        - Iniciação à Prática Biblioteconômica
+                        - Biblioteconomia e Leitura
+                        - Estudo de Usuários e Comunidades
+                        - Tópicos Especiais em Temas Contemporâneos B: Biblioterapia
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="label">Cargos de destaque na instituição</div>
                     <div class="value" id="cargos-instituicao">
-                        - Representante no Conselho de Ensino e Pesquisa (1990-1992)
-                        -  Vice-Coordenadora do Curso de Especialização Lato Sensu "Organização do Conhecimento para Recuperação da Informação"
+                        - Chefe do Departamento de Estudos e Processos Biblioteconômicos
+                        - Substituta do Coordenado Pro Tempore do Curso de Licenciatura em Biblioteconomia
+                        - Coordenação de Estágio da Escola de Biblioteconomia
                     </div>
                 </div>
 
                 <div class="field">
                     <div class="label">Cargos de destaque fora da instituição</div>
                     <div class="value" id="cargos-fora">
-                        - Chefe e curadora de Obras Raras da Biblioteca Nacional
-                        - Sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB)
+                        - Consultoria na reestruturação da Biblioteca do Petit Trianon e implantação de uma nova biblioteca na ABL
+                        - Coordenadora do Centro de Formação de Recursos Humanos na Fundação Biblioteca Nacional
                     </div>
                 </div>
             </div>
@@ -279,9 +282,8 @@
             <div class="field">
                     <div class="label">Principais trabalhos publicados</div>
                     <div class="value" id="trabalhos-publicados">
-                        - PINHEIRO, Ana Virginia. História, memória e patrimônio: convergências para o futuro dos acervos especiais. Acervos especiais: memórias e diálogos. São Paulo: Cultura Acadêmica, p. 33-44, 2015.
-                        - PINHEIRO, Ana Virginia. Livro raro: antecedentes, propósitos e definições. Ciência da Informação: múltiplos diálogos. Marília, SP: Oficina universitária, p. 31-44, 2009.
-                        - PINHEIRO, Ana Virginia. A ordem dos livros na biblioteca. Interciência, 2022.
+                        - .
+                     
 
                     </div>
                 </div>
@@ -292,12 +294,23 @@
                 <div class="field">
                     <div class="label">Prêmios e honrarias</div>
                     <div class="value" id="premios">
-                        2014 - Prêmio/Modalidade Apresentação Oral: ""O histórico da Biblioteca como instrumento de gestão e salvaguarda das coleções de livros raros..."", XVIII Seminário Nacional de Bibliotecas Universitárias.
-                        2013 - Medalha de Honra ao Mérito ?80 Anos da Escola de Museologia? (criada pela Resolução UNIRIO nº 3.845, de 14 fev. 2012), UNIRIO, Escola de Museologia.
-                        1999 - Prêmio Bolsa de Investigação 1999, Biblioteca Nacional (Portugal)-Comissão Nacional para as Comemorações dos Descobrimentos Portugueses.
-                        1999 - Prêmio História da Contabilidade ""Martim Noel Monteiro"", Associação Portuguesa de Técnicos de Contabilidade.
-                        1991 - Medalha Eugênio Teixeira Leal, Banco Econômico (Bahia).
-                        1986 - Prêmio Biblioteconomia e Documentação, Instituto Nacional do Livro (Distrito Federal)
+                        2016 - Projeto de Ensino Biblioterapia, um campo de atuação contemporânea em Biblioteconomia, UNIRIO.
+                        2005 - Personalidade - Destaque Especial Cultural 2005, SERJUS - Centro Cultural da Justiça Federal.
+                        2003 - Prêmio Especial do Júri Walmir Ayala, União Brasileira de Escritores - UBE.
+                        2002 - IV Concurso Nacional UAPÊ ? Jornal Poesia Viva finalista, UAPÊ.
+                        2001 - III Concurso Nacional UAPÊ ? Jornal Poesia Viva Menção Honrosa, UAPÊ.
+                        2000 - I Festival de Poesia, Sindicato dos Escritores do Estado do Rio de Janeiro.
+                        2000 - Concurso de Poesia ? UAPÊ - Jornal Poesia Viva 3° lugar, UAPÊ.
+                        2000 - Prêmio Gilberto Mendonça Teles (troféu bronze - 3º lugar, Editora UAPÊ.
+                        1999 - Concurso de Poesia ? UAPÊ - Jornal Poesia Viva ? 99 - Menção honrosa, UAPÊ.
+                        1999 - Concurso Poeta, Saia da Gaveta - Menção honrosa especial.
+                        1999 - Prêmio FEUC de Literatura finalista, FEUC.
+                        1998 - I Mostra de Poesia Carioca.
+                        1998 - Concurso Literário Talentos da maior idade 1° lugar.
+                        1998 - Concurso Literário Com a Palavra o Brasil - 1º lugar, Editora Litteris.
+                        1998 - Concurso Literário Falando de Mãe, Editora Litteris.
+                        1998 - Talentos da Maior Idade ? 1° lugar prêmio de edição, Editora Litteris.
+                        1998 - II Festival de Poesia ? 2o lugar e prêmio de edição, SESC Copacabana.
 
                     </div>
                 </div>
