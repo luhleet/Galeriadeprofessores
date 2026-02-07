@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title> Simone  — Perfil</title>
+    <style>
+        :root{
+            --bg:#f7f8fb;
+            --card:#ffffff;
+            --muted:#6b7280;
+            --accent:#0f66f0;
+            --gap:18px;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color:#111827;
+        }
+        body{
+            margin:0;
+            background:var(--bg);
+            padding:32px;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+        }
+        .container{
+            max-width:1000px;
+            margin:0 auto;
+            background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.95));
+            border-radius:12px;
+            box-shadow:0 6px 22px rgba(15,23,42,0.08);
+            overflow:hidden;
+            display:grid;
+            grid-template-columns:320px 1fr;
+            gap:var(--gap);
+        }
+
+        /* Left column (foto + contatos) */
+        .sidebar{
+            padding:22px;
+            background:linear-gradient(180deg, #ffffff, #fbfdff);
+            border-right:1px solid rgba(15,23,42,0.04);
+        }
+        .photo{
+            width:100%;
+            aspect-ratio:4/5;
+            background:#eee;
+            border-radius:8px;
+            overflow:hidden;
+            display:block;
+            margin-bottom:14px;
+        }
+        .photo img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+        }
+        .name{
+            font-size:20px;
+            font-weight:700;
+            margin:0 0 6px 0;
+        }
+        .position{
+            margin:0;
+            font-size:13px;
+            color:var(--muted);
+            margin-bottom:12px;
+        }
+        .socials{
+            display:flex;
+            gap:10px;
+            flex-wrap:wrap;
+        }
+        .socials a{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            padding:8px 10px;
+            background:#f4f6fb;
+            color:var(--accent);
+            border-radius:8px;
+            text-decoration:none;
+            font-size:13px;
+        }
+        .socials svg{width:18px;height:18px;display:block;fill:currentColor}
+
+    /* Right column (informações) */
+    .content{padding:22px; text-align:justify; -webkit-hyphens:auto; -ms-hyphens:auto; hyphens:auto;}
+        .section{
+            margin-bottom:18px;
+            padding-bottom:8px;
+            border-bottom:1px dashed rgba(15,23,42,0.04);
+        }
+        .section h2{
+            margin:0 0 10px 0;
+            font-size:15px;
+            color:#0f1724;
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+        .field{
+            margin-bottom:10px;
+            font-size:14px;
+        }
+        .field .label{
+            font-weight:600;
+            color:var(--muted);
+            display:block;
+            margin-bottom:6px;
+            font-size:12px;
+        }
+        .field .value{
+            color:#111827;
+            line-height:1.5;
+            white-space:pre-wrap;
+            text-align:justify;
+            -webkit-hyphens:auto;
+            -ms-hyphens:auto;
+            hyphens:auto;
+        }
+        ul.simple{
+            margin:6px 0 0 18px;
+            color:#111827;
+        }
+
+        /* compact list for interviews/podcasts etc */
+        .chips{
+            display:flex;
+            gap:8px;
+            flex-wrap:wrap;
+        }
+        .chip{
+            background:#f3f6ff;
+            color:var(--accent);
+            padding:8px 12px;
+            border-radius:999px;
+            font-size:13px;
+        }
+
+        /* Responsive */
+        @media (max-width:880px){
+            .container{grid-template-columns:1fr; padding:0}
+            .sidebar{border-right:none;border-bottom:1px solid rgba(15,23,42,0.04)}
+        }
+
+        /* Em telas muito pequenas, usar alinhamento à esquerda para melhor legibilidade */
+        @media (max-width:420px){
+            .content, .field .value{ text-align:left; }
+        }
+    </style>
+</head>
+<body>
+    <main class="container" role="main" aria-labelledby="profile-name">
+        <!-- Sidebar: foto + redes -->
+        <aside class="sidebar" aria-label="Informações pessoais e redes sociais">
+            <figure class="photo" aria-hidden="false">
+                <!-- A imagem está na pasta principal `imagens/`; ajustar caminho relativo quando o HTML está em /professores/ -->
+                <img src="../imagens/maauraesandola.jpg" alt="Foto de Maura Esandola">
+            </figure>
+
+            <h1 id="profile-name" class="name">Maura Esandola</h1>
+            <p class="position">Professora Aposentada — Departamento de Biblioteconomia</p>
+
+            <div class="socials" aria-label="Redes sociais">
+                <a href="#" title="Instagram — Maura Esandola" target="_blank" rel="noopener noreferrer">
+                    <!-- Instagram SVG -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zM18.6 6.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" /></svg>
+                    Instagram
+                </a>
+
+                <a href="#" title="Currículo Lattes — Maura Esandola" target="_blank" rel="noopener noreferrer">
+                    <!-- Book icon for Lattes -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h10v2H6zM6 8h10v12H6zM3 6v12a1 1 0 0 0 1 1h2V5H4a1 1 0 0 0-1 1z"/></svg>
+                    Lattes
+                </a>
+
+                <a href="#" title="LinkedIn - Maura Esandola" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v11H3zM9 9h3.8v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.8 2.6 4.8 6v6.4H19v-5.7c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V20H9z"/></svg>
+                    LinkedIn
+                </a>
+
+                <a href="#" title="ORCID - Maura Esandola" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 .001 8.001A4 4 0 0 0 12 8z"/></svg>
+                    ORCID
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <section class="content" aria-label="Detalhes do perfil">
+            <div class="section">
+                <h2>Biografia</h2>
+                <div class="field">
+                    <div class="label">Resumo</div>
+                    <div class="value" id="biography">  </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Datas</h2>
+                <div class="field">
+                    <div class="label">Ano de ingresso na universidade</div>
+                    <div class="value" id="data-ingresso"></div>
+                </div>
+                <div class="field">
+                    <div class="label">Data de aposentadoria</div>
+                    <div class="value" id="data-aposentadoria"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Entrevistas</h2>
+                <div class="field">
+                    <div class="label">Entrevistas publicadas</div>
+                    <ul class="simple" id="entrevistas">
+                        <li></li>
+                        <li>-</li>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Podcasts</h2>
+                <div class="field">
+                    <div class="label">Participações em podcast</div>
+                    <ul class="simple" id="podcasts">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Atividades e depoimentos</h2>
+                <div class="field">
+                    <div class="label">Discursos proferidos</div>
+                    <div class="value" id="discursos">Lista de discursos, cerimônias e eventos importantes.</div>
+                </div>
+
+                <div class="field">
+                    <div class="label">Depoimentos</div>
+                    <div class="value" id="depoimentos">Depoimentos de colegas, alunos e gestores (use citações curtas ou links para vídeos).</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Atuação docente e cargos</h2>
+                <div class="field">
+                    <div class="label">Disciplinas lecionadas</div>
+                    <div class="value" id="disciplinas">
+                        
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="label">Cargos de destaque na instituição</div>
+                    <div class="value" id="cargos-instituicao">
+                       
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="label">Cargos de destaque fora da instituição</div>
+                    <div class="value" id="cargos-fora">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                    <div class="label">Principais trabalhos publicados</div>
+                    <div class="value" id="trabalhos-publicados">
+                        - .
+                     
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Premiações</h2>
+                <div class="field">
+                    <div class="label">Prêmios e honrarias</div>
+                    <div class="value" id="premios">
+                    
+                      
+
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
