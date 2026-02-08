@@ -1,25 +1,27 @@
-<!doctype html> 
-<html lang="pt-BR"> 
-  <head> <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
-<nav class="navbar" aria-label="Navegação principal">
-  <div class="navbar-container">
-    <a href="/" class="navbar-logo">Galeria de Professores</a>
-    <ul class="navbar-menu">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/sobre.html">Sobre</a></li>
-      <li><a href="/login.html">Login</a></li>
-    </ul>
-  </div>
-    <title>Ana Virgínia Pinheiro — Perfil</title> 
-    <style> :root{ --bg:#f7f8fb; 
-    --card:#ffffff; 
-    --muted:#6b7280; 
-    --accent:#0f66f0; 
-    --gap:18px;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111827; 
-  }
- /* Container da navbar */
+﻿
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ana Virgínia Pinheiro — Perfil</title>
+    <style>
+      .figcaption-hidden {
+        display: none;
+      }
+      .footer-style {
+        text-align: center;
+        padding: 16px 0;
+        color: var(--muted);
+      }
+      :root{ --bg:#f7f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f66f0;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111827;
+    }
+    /* Container da navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -79,121 +81,121 @@ section {
   margin-top: var(--gap);
 }
 
-  body{ margin:0; 
-    background:var(--bg); 
-    padding:32px; 
-    -webkit-font-smoothing:antialiased; 
+  body{ margin:0;
+    background:var(--bg);
+    padding:32px;
+    -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale; }
-    .container{ max-width:1000px; 
-      margin:0 auto; 
-      background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.95)); 
-      border-radius:12px; 
-      box-shadow:0 6px 22px rgba(15,23,42,0.08); 
-      overflow:hidden; 
-      display:grid; 
-      grid-template-columns:320px 1fr; gap:var(--gap); 
+    .container{ max-width:1000px;
+      margin:0 auto;
+      background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.95));
+      border-radius:12px;
+      box-shadow:0 6px 22px rgba(15,23,42,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:320px 1fr; gap:var(--gap);
     }
-    /* Left column (foto + contatos) */ 
-    .sidebar{ padding:22px; 
-      background:linear-gradient(180deg, #ffffff, #fbfdff); 
-      border-right:1px solid rgba(15,23,42,0.04); 
-    } 
+    /* Left column (foto + contatos) */
+    .sidebar{ padding:22px;
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
+      border-right:1px solid rgba(15,23,42,0.04);
+    }
     .photo { width:100%; aspect-ratio:4/5; background:#eee;
-       border-radius:8px; 
-       overflow:hidden; 
+       border-radius:8px;
+       overflow:hidden;
        display:block;
        margin-bottom:14px; }
        .photo img { width:100%;
-         height:100%; 
-         object-fit:cover; 
+         height:100%;
+         object-fit:cover;
          display:block;
-         } 
+         }
          .name{ font-size:20px;
-           font-weight:700; 
-           margin:0 0 6px 0
-           } 
+           font-weight:700;
+           margin:0 0 6px 0;
+           }
            .position { margin:0;
              font-size:13px;
-              color:var(--muted); 
+              color:var(--muted);
               margin-bottom:12px;
-        } .socials{ display:flex; 
-          gap:10px; 
+        } .socials{ display:flex;
+          gap:10px;
           flex-wrap:wrap; }
-      .socials a{ display:inline-flex; 
-        align-items:center; 
-        gap:8px; 
-        padding:8px 10px; 
-        background:#f4f6fb; 
-        color:var(--accent); 
-        border-radius:8px; 
-        text-decoration:none; 
+      .socials a{ display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:8px 10px;
+        background:#f4f6fb;
+        color:var(--accent);
+        border-radius:8px;
+        text-decoration:none;
         font-size:13px;
-    } 
+    }
     .socials svg{width:18px;
       height:18px;
       display:block;
-      fill:currentColor} 
-      /* Right column (informações) */ 
-      .content{padding:22px; 
-        text-align:justify; 
-        -webkit-hyphens:auto; 
-        -ms-hyphens:auto; 
+      fill:currentColor}
+      /* Right column (informações) */
+      .content{padding:22px;
+        text-align:justify;
+        -webkit-hyphens:auto;
+        -ms-hyphens:auto;
         hyphens:auto;
       }
-    .section{ margin-bottom:18px; 
-      padding-bottom:8px; 
-      border-bottom:1px dashed rgba(15,23,42,0.04); 
+    .section{ margin-bottom:18px;
+      padding-bottom:8px;
+      border-bottom:1px dashed rgba(15,23,42,0.04);
     }
-    .section h2{ margin:0 0 10px 0; 
-      font-size:15px; 
-      color:#0f1724; display:flex; 
-      align-items:center; 
-      gap:10px; 
+    .section h2{ margin:0 0 10px 0;
+      font-size:15px;
+      color:#0f1724; display:flex;
+      align-items:center;
+      gap:10px;
     }
-  .field{ margin-bottom:10px; 
-    font-size:14px; 
+  .field{ margin-bottom:10px;
+    font-size:14px;
   }
   .field .label{ font-weight:600;
-     color:var(--muted); 
-     display:block; 
-     margin-bottom:6px; 
+     color:var(--muted);
+     display:block;
+     margin-bottom:6px;
      font-size:12px;
-} 
-.field .value{ color:#111827; 
-  line-height:1.5; 
-  white-space:pre-wrap; 
-  text-align:justify; 
-  -webkit-hyphens:auto; 
-  -ms-hyphens:auto; 
-  hyphens:auto; 
 }
-ul.simple{ margin:6px 0 0 18px; 
-  color:#111827; 
-} 
-/* compact list for interviews/podcasts etc */ 
-.chips{ display:flex; 
-  gap:8px; 
-  flex-wrap:wrap; 
-} 
-.chip{ background:#f3f6ff; 
-  color:var(--accent); 
-  padding:8px 12px; 
-  border-radius:999px; 
-  font-size:13px; 
+.field .value{ color:#111827;
+  line-height:1.5;
+  white-space:pre-wrap;
+  text-align:justify;
+  -webkit-hyphens:auto;
+  -ms-hyphens:auto;
+  hyphens:auto;
 }
-/* Responsive */ 
+ul.simple{ margin:6px 0 0 18px;
+  color:#111827;
+}
+/* compact list for interviews/podcasts etc */
+.chips{ display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.chip{ background:#f3f6ff;
+  color:var(--accent);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+}
+/* Responsive */
 @media (max-width:880px)
-{ 
-  .container{grid-template-columns:1fr; 
-  padding:0} 
+{
+  .container{grid-template-columns:1fr;
+  padding:0}
   .sidebar{border-right:none;
   border-bottom:1px solid rgba(15,23,42,0.04)
-  } } 
-  /* Em telas muito pequenas, usar alinhamento à esquerda para melhor legibilidade */ 
+  } }
+  /* Em telas muito pequenas, usar alinhamento à esquerda para melhor legibilidade */
   @media (max-width:420px)
-  { 
-    .content, .field .value{ text-align:left; 
-    } } 
+  {
+    .content, .field .value{ text-align:left;
+    } }
     /*Formulário de depoimentos*/
     /* ===============================
    Depoimentos
@@ -296,100 +298,189 @@ ul.simple{ margin:6px 0 0 18px;
     padding: 12px;
   }
 }
-      </style>
-    </head>
-    <body>
+    </style>
+  </head>
+  <body>
+    <header>
       <nav class="navbar" aria-label="Navegação principal">
         <div class="navbar-container">
-          <a href="/" class="navbar-logo">Galeria de Professores</a>
-          <ul class="navbar-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/login.html">Login</a></li>
+          <a href="/" class="navbar-logo">Galeria de Professores Inativos do Departamento de Biblioteconomia da UNIRIO</a>
+          <ul class="navbar-menu" role="menubar">
+            <li role="none"><a role="menuitem" href="/index.html">Home</a></li>
+            <li role="none"><a role="menuitem" href="/sobre.html">Sobre</a></li>
           </ul>
         </div>
       </nav>
-      <main class="container" role="main" aria-labelledby="profile-name">
-        <!-- Sidebar: foto + redes -->
-        <aside class="sidebar" aria-label="Informações pessoais e redes sociais">
-        <figure class="photo" aria-hidden="false"> 
-          <!-- A imagem está na pasta principal imagens/; ajustar caminho relativo quando o HTML está em /professores/ --> <img src="../imagens/anavirginiapinheiro.jpg" alt="Foto de Ana Virgínia Pinheiro"> </figure>
-    <h1 id="profile-name" class="name">Ana Virgínia Pinheiro</h1> <p class="position">Professora Aposentada — Departamento de Biblioteconomia</p> 
-    <div class="socials" aria-label="Redes sociais"> <a href="https://www.instagram.com/anavirginiapinheiro/" title="Instagram — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer"> 
-      <!-- Instagram SVG --> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zM18.6 6.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" /></svg> Instagram </a>
-       <a href="https://lattes.cnpq.br/1451014589696902" title="Currículo Lattes — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer"> <!-- Book icon for Lattes -->
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h10v2H6zM6 8h10v12H6zM3 6v12a1 1 0 0 0 1 1h2V5H4a1 1 0 0 0-1 1z"/></svg> Lattes </a>
-        <a href="https://www.linkedin.com/in/anavirginiapinheiro/?originalSubdomain=br" title="LinkedIn - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v11H3zM9 9h3.8v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.8 2.6 4.8 6v6.4H19v-5.7c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V20H9z"/></svg> LinkedIn
-        </a>
-        <a href="https://orcid.org/0009-0009-6194-8018" title="ORCID - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer"> 
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 .001 8.001A4 4 0 0 0 12 8z"/></svg> ORCID </a>
-          </div> 
-        </aside>
-      
-  <!-- Conteúdo principal --> 
-   <section class="content" aria-label="Detalhes do perfil"> <div class="section"> 
-    <h2>Biografia</h2> <div class="field"> 
-      <div class="label">Resumo</div>
-      <div class="value" id="biography">Bibliotecária, mestre em Administração Pública/FGV, sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB) e diretora de sua Biblioteca. Foi Bibliotecária da Biblioteca Nacional (1982-2020), onde atuou por 16 anos como chefe e curadora de Obras Raras; e Professora da Escola de Biblioteconomia da UNIRIO (1987-2023), onde lecionou, principalmente, História do Livro e das Bibliotecas e Organização e Administração de Bibliotecas. Integra, entre outros, o Grupo de Estudos Interdisciplinares da Raridade Bibliográfica (GEIRD/BA), a Confraria da Conservação e Restauração em Suporte Papel e Afins (SP), e o Grupo de Pesquisa em Critica Textual da Biblioteca Nacional. Dedica-se à mentoria de projetos e pesquisas sobre Memória bibliográfica e documental e à difusão e avaliação do livro raro..</div> 
-    </div> 
-  </div>
+    </header>
 
-  <div class="section"> 
-    <h2>Datas</h2> <div class="field"> 
-      <div class="label">Ano de ingresso na universidade</div> <div class="value" id="data-ingresso">1987</div> 
-    </div> 
-    <div class="field"> <div class="label">Data de aposentadoria</div> 
-    <div class="value" id="data-aposentadoria">14/03/2023</div> 
-  </div> 
-</div>
-<div class="section"> 
-  <h2>Entrevistas</h2> 
-  <div class="field"> <div class="label">Entrevistas publicadas</div> 
-  <ul class="simple" id="entrevistas"> 
-    <li>Entrevista Programa do Jo Soares — https://www.youtube.com/watch?v=c4rms41W_BU</li> 
-    <li>Entrevista O Globo — https://oglobo.globo.com/brasil/conte-algo-que-nao-sei/ana-virginia-pinheiro-bibliotecaria-os-livros-sabem-que-vao-sobreviver-nos-14307624</li>
-    <li>Entrevista Programa do Jo Soares — https://globoplay.globo.com/v/904236/título</li> 
-  </ul> 
-</div> 
-</div>
-<div class="section"> 
-  <h2>Podcasts</h2> 
-  <div class="field"> <div class="label">Participações em podcast</div>
-   <ul class="simple" id="podcasts"> <li>Podcast BiblioOQUE — https://open.spotify.com/episode/4o4nwOAxhDHpFrW8APFVxN</li> <li>Podcast — https://www.programagw.com.br/2020/12/</li> 
-  </ul> 
-</div> 
-</div>
-<div class="section"> 
-  <h2>Atividades e depoimentos</h2> 
-  <div class="field"> <div class="label">Discursos proferidos</div> <div class="value" id="discursos">Lista de discursos, cerimônias e eventos importantes.</div> 
-</div>
-<div class="field"> 
-  <div class="label">Depoimentos</div> 
-  <div class="value" id="depoimentos">Depoimentos de colegas, alunos e gestores (use citações curtas ou links para vídeos).</div> 
-</div> 
-</div>
-  <div class="field">
-  <div class="label">Deixe seu depoimento</div>
+    <main class="container" role="main" aria-labelledby="profile-name">
+      <aside class="sidebar" aria-label="Informações pessoais e redes sociais">
+        <figure class="photo" aria-hidden="false">
+          <img src="../imagens/anavirginiapinheiro.jpg" alt="Foto de Ana Virgínia Pinheiro">
+          <figcaption class="figcaption-hidden">Ana Virgínia Pinheiro — Professora</figcaption>
+        </figure>
 
-  <form id="form-depoimento">
-    <input type="text" name="nome" placeholder="Seu nome" required class="form-input">
+        <h1 id="profile-name" class="name">Ana Virgínia Pinheiro</h1>
+        <p class="position">Professora Aposentada — Departamento de Biblioteconomia</p>
 
-    <textarea name="comentario" placeholder="Escreva seu depoimento..."
-      required rows="4" class="form-textarea"></textarea>
+        <div class="socials" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/anavirginiapinheiro/" title="Instagram — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zM18.6 6.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" /></svg> Instagram
+          </a>
+          <a href="https://lattes.cnpq.br/1451014589696902" title="Currículo Lattes — Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h10v2H6zM6 8h10v12H6zM3 6v12a1 1 0 0 0 1 1h2V5H4a1 1 0 0 0-1 1z"/></svg> Lattes
+          </a>
+          <a href="https://www.linkedin.com/in/anavirginiapinheiro/?originalSubdomain=br" title="LinkedIn - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v11H3zM9 9h3.8v1.5h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.8 2.6 4.8 6v6.4H19v-5.7c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V20H9z"/></svg> LinkedIn
+          </a>
+          <a href="https://orcid.org/0009-0009-6194-8018" title="ORCID - Ana Virgínia Pinheiro" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 .001 8.001A4 4 0 0 0 12 8z"/></svg> ORCID
+          </a>
+        </div>
+      </aside>
 
-    <button type="submit" class="form-button">
-      Enviar depoimento
-    </button>
-  </form>
+      <section class="content" aria-label="Detalhes do perfil">
+        <article class="section" aria-labelledby="bio-title">
+          <h2 id="bio-title">Biografia</h2>
+          <div class="field">
+            <div class="label">Resumo</div>
+            <div class="value" id="biography">Bibliotecária, mestre em Administração Pública/FGV, sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB) e diretora de sua Biblioteca. Foi Bibliotecária da Biblioteca Nacional (1982-2020), onde atuou por 16 anos como chefe e curadora de Obras Raras; e Professora da Escola de Biblioteconomia da UNIRIO (1987-2023), onde lecionou, principalmente, História do Livro e das Bibliotecas e Organização e Administração de Bibliotecas. Integra, entre outros, o Grupo de Estudos Interdisciplinares da Raridade Bibliográfica (GEIRD/BA), a Confraria da Conservação e Restauração em Suporte Papel e Afins (SP), e o Grupo de Pesquisa em Crítica Textual da Biblioteca Nacional. Dedica-se à mentoria de projetos e pesquisas sobre memória bibliográfica e documental e à difusão e avaliação do livro raro.</div>
+          </div>
+        </article>
 
-  <div id="mensagem"></div>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script>
-const supabase = window.supabase.createClient(
+        <section class="section" aria-labelledby="datas-title">
+          <h2 id="datas-title">Datas</h2>
+          <div class="field">
+            <div class="label">Ano de ingresso na universidade</div>
+            <div class="value" id="data-ingresso"><time datetime="1987">1987</time></div>
+          </div>
+          <div class="field">
+            <div class="label">Data de aposentadoria</div>
+            <div class="value" id="data-aposentadoria"><time datetime="2023-03-14">14/03/2023</time></div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="entrevistas-title">
+          <h2 id="entrevistas-title">Entrevistas</h2>
+          <div class="field">
+            <div class="label">Entrevistas publicadas</div>
+            <ul class="simple" id="entrevistas">
+              <li><a href="https://www.youtube.com/watch?v=c4rms41W_BU">Entrevista Programa do Jo Soares</a></li>
+              <li><a href="https://oglobo.globo.com/brasil/conte-algo-que-nao-sei/ana-virginia-pinheiro-bibliotecaria-os-livros-sabem-que-vao-sobreviver-nos-14307624">Entrevista — O Globo</a></li>
+              <li><a href="https://globoplay.globo.com/v/904236/">Programa do Jo Soares (Globoplay)</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="podcasts-title">
+          <h2 id="podcasts-title">Podcasts</h2>
+          <div class="field">
+            <div class="label">Participações em podcast</div>
+            <ul class="simple" id="podcasts">
+              <li><a href="https://open.spotify.com/episode/4o4nwOAxhDHpFrW8APFVxN">Podcast BiblioOQUE</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="atividades-title">
+          <h2 id="atividades-title">Atividades e depoimentos</h2>
+          <div class="field">
+            <div class="label">Discursos proferidos</div>
+            <div class="value" id="discursos">Lista de discursos, cerimônias e eventos importantes.</div>
+          </div>
+
+          <div class="field">
+            <div class="label">Depoimentos</div>
+            <div id="depoimentos" class="depoimentos-wrapper" aria-live="polite">Nenhum depoimento ainda.</div>
+          </div>
+
+          <form id="form-depoimento" class="form-depoimento" aria-label="Formulário de depoimento">
+            <div>
+              <label for="nome">Seu nome</label>
+              <input id="nome" type="text" name="nome" placeholder="Seu nome" required class="form-input">
+            </div>
+
+            <div>
+              <label for="comentario">Comentário</label>
+              <textarea id="comentario" name="comentario" placeholder="Escreva seu depoimento..." required rows="4" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Enviar depoimento</button>
+          </form>
+
+          <div id="mensagem" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="section" aria-labelledby="publicacoes-title">
+          <h2 id="publicacoes-title">Atuação docente e cargos</h2>
+          <div class="field">
+            <div class="label">Disciplinas lecionadas</div>
+            <div class="value" id="disciplinas">
+              - Organização e Administração de Bibliotecas<br>
+              - História do Livro e das Bibliotecas I<br>
+              - História do Livro e das Bibliotecas II<br>
+              - Introdução à Cultura Brasileira<br>
+              - Introdução à Biblioteconomia<br>
+              - Classificação Decimal de Dewey e Catálogo Alfabético de Assuntos<br>
+              - Métodos e Técnicas de Redação Científica
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label">Cargos de destaque na instituição</div>
+            <div class="value" id="cargos-instituicao">
+              - Representante no Conselho de Ensino e Pesquisa (1990-1992)<br>
+              - Vice-Coordenadora do Curso de Especialização Lato Sensu "Organização do Conhecimento para Recuperação da Informação"
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label">Cargos de destaque fora da instituição</div>
+            <div class="value" id="cargos-fora">
+              - Chefe e curadora de Obras Raras da Biblioteca Nacional<br>
+              - Sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB)
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="trabalhos-title">
+          <h2 id="trabalhos-title">Principais trabalhos publicados</h2>
+          <div class="field">
+            <div class="value" id="trabalhos-publicados">
+              - PINHEIRO, Ana Virginia. História, memória e patrimônio: convergências para o futuro dos acervos especiais. Acervos especiais: memórias e diálogos. São Paulo: Cultura Acadêmica, p. 33-44, 2015.<br>
+              - PINHEIRO, Ana Virginia. Livro raro: antecedentes, propósitos e definições. Ciência da Informação: múltiplos diálogos. Marília, SP: Oficina universitária, p. 31-44, 2009.<br>
+              - PINHEIRO, Ana Virginia. A ordem dos livros na biblioteca. Interciência, 2022.
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="premios-title">
+          <h2 id="premios-title">Premiações</h2>
+          <div class="field">
+            <div class="value" id="premios">
+              2014 - Prêmio/Modalidade Apresentação Oral: "O histórico da Biblioteca como instrumento de gestão e salvaguarda das coleções de livros raros...", XVIII Seminário Nacional de Bibliotecas Universitárias.<br>
+              2013 - Medalha de Honra ao Mérito "80 Anos da Escola de Museologia" (Resolução UNIRIO nº 3.845/2012).<br>
+              1999 - Prêmio Bolsa de Investigação 1999, Biblioteca Nacional (Portugal).<br>
+              1999 - Prêmio História da Contabilidade "Martim Noel Monteiro".<br>
+              1991 - Medalha Eugênio Teixeira Leal.<br>
+              1986 - Prêmio Biblioteconomia e Documentação, Instituto Nacional do Livro.
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer-style">
+      © Galeria de Professores
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+const supabase = supabase.createClient(
   'YOUR_SUPABASE_URL',
   'YOUR_SUPABASE_ANON_KEY'
 );
+
 async function carregarDepoimentos() {
   try {
     const { data, error } = await supabase
@@ -407,10 +498,22 @@ async function carregarDepoimentos() {
 
     if (data && data.length > 0) {
       data.forEach(d => {
-        const div = document.createElement("div");
-        div.className = "depoimento-card";
-        div.innerHTML = `<div class="depoimento-nome">${d.nome}</div><div class="depoimento-texto">${d.comentario}</div><div class="depoimento-data">${new Date(d.created_at).toLocaleDateString('pt-BR')}</div>`;
-        container.appendChild(div);
+        const art = document.createElement("article");
+        art.className = "depoimento-card";
+        const nome = document.createElement("div");
+        nome.className = "depoimento-nome";
+        nome.textContent = d.nome || "Anônimo";
+        const texto = document.createElement("div");
+        texto.className = "depoimento-texto";
+        texto.textContent = d.comentario;
+        const dataEl = document.createElement("time");
+        dataEl.className = "depoimento-data";
+        dataEl.dateTime = d.created_at;
+        dataEl.textContent = new Date(d.created_at).toLocaleDateString('pt-BR');
+        art.appendChild(nome);
+        art.appendChild(texto);
+        art.appendChild(dataEl);
+        container.appendChild(art);
       });
     } else {
       container.innerText = "Nenhum depoimento ainda.";
@@ -422,52 +525,39 @@ async function carregarDepoimentos() {
 }
 
 carregarDepoimentos();
-</script>
-</div>
-<div class="section"> 
-  <h2>Atuação docente e cargos</h2> 
-  <div class="field"> <div class="label">Disciplinas lecionadas</div> 
-  <div class="value" id="disciplinas">
-     - Organização e Administração de Bibliotecas 
-     - História do Livro e das Bibliotecas I 
-     - História do Livro e das Bibliotecas II 
-     - Introdução à Cultura Brasileira 
-     - Introdução à Biblioteconomia 
-     - Classificação Decimal de Dewey e Catálogo Alfabético de Assuntos 
-     - Métodos e Técnicas de Redação Científica </div> 
-    </div>
-    <div class="field"> 
-      <div class="label">Cargos de destaque na instituição</div> 
-      <div class="value" id="cargos-instituicao"> 
-        - Representante no Conselho de Ensino e Pesquisa (1990-1992) 
-        - Vice-Coordenadora do Curso de Especialização Lato Sensu "Organização do Conhecimento para Recuperação da Informação" </div> 
-      </div>
-  <div class="field"> <div class="label">Cargos de destaque fora da instituição</div> 
-  <div class="value" id="cargos-fora"> - Chefe e curadora de Obras Raras da Biblioteca Nacional 
-    - Sócia honorária do Instituto Histórico e Geográfico Brasileiro (IHGB) </div> 
-</div> 
-</div>
-<div class="section"> 
-  <div class="field">
-     <div class="label">Principais trabalhos publicados</div> 
-     <div class="value" id="trabalhos-publicados"> 
-      - PINHEIRO, Ana Virginia. História, memória e patrimônio: convergências para o futuro dos acervos especiais. Acervos especiais: memórias e diálogos. São Paulo: Cultura Acadêmica, p. 33-44, 2015. - PINHEIRO, Ana Virginia. Livro raro: antecedentes, propósitos e definições. Ciência da Informação: múltiplos diálogos. Marília, SP: Oficina universitária, p. 31-44, 2009. 
-      - PINHEIRO, Ana Virginia. A ordem dos livros na biblioteca. Interciência, 2022.
-      </div> 
-    </div> 
-  </div>
-<div class="section">
-   <h2>Premiações</h2> 
-   <div class="field"> <div class="label">Prêmios e honrarias</div> 
-   <div class="value" id="premios"> 
-    2014 - Prêmio/Modalidade Apresentação Oral: ""O histórico da Biblioteca como instrumento de gestão e salvaguarda das coleções de livros raros..."", XVIII Seminário Nacional de Bibliotecas Universitárias. 
-    2013 - Medalha de Honra ao Mérito ?80 Anos da Escola de Museologia? (criada pela Resolução UNIRIO nº 3.845, de 14 fev. 2012), UNIRIO, Escola de Museologia. 
-    1999 - Prêmio Bolsa de Investigação 1999, Biblioteca Nacional (Portugal)-Comissão Nacional para as Comemorações dos Descobrimentos Portugueses. 
-    1999 - Prêmio História da Contabilidade ""Martim Noel Monteiro"", Associação Portuguesa de Técnicos de Contabilidade. 
-    1991 - Medalha Eugênio Teixeira Leal, Banco Econômico (Bahia). 
-    1986 - Prêmio Biblioteconomia e Documentação, Instituto Nacional do Livro (Distrito Federal) </div> 
-  </div>
-  </section> 
-</main> 
-</body> 
+
+document.getElementById('form-depoimento').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value.trim();
+  const comentario = document.getElementById('comentario').value.trim();
+  const mensagem = document.getElementById('mensagem');
+
+  if (!nome || !comentario) {
+    mensagem.textContent = 'Preencha todos os campos.';
+    return;
+  }
+
+  try {
+    const { data, error } = await supabase
+      .from('depoimentos')
+      .insert([{ nome, comentario }]);
+
+    if (error) {
+      mensagem.textContent = 'Erro ao enviar depoimento.';
+      console.error(error);
+      return;
+    }
+
+    mensagem.textContent = 'Depoimento enviado com sucesso.';
+    document.getElementById('form-depoimento').reset();
+    carregarDepoimentos();
+  } catch (err) {
+    mensagem.textContent = 'Erro ao enviar depoimento.';
+    console.error(err);
+  }
+});
+    </script>
+  </body>
 </html>
+'@
+Set-Content -Path 'C:\Users\lucia\Galeriadeprofessores\professores\anavirginiapinheiro.html' -Value $html -Encoding utf8

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Galeria de Professores Inativos do Departamento de Biblioteconomia da Unirio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* ---------- VARIÁVEIS ---------- */
+    :root{
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --primary: #2b6cb0;
+      --primary-hover: #1e4f85;
+      --secondary: #e2e8f0;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --radius: 10px;
+    }
+
+    /* ---------- BASE ---------- */
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* ---------- NAVBAR ---------- */
+    header{
+      background:#fff;
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:1rem 1.5rem;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    .nav-left{
+      display:flex;
+      gap:1rem;
+      align-items:center;
+    }
+
+    .nav-logo{
+      font-weight:700;
+      color:var(--primary);
+      text-decoration:none;
+    }
+
+    .nav-link{
+      color:var(--primary);
+      text-decoration:none;
+      font-size:.95rem;
+    }
+
+    .nav-link:hover{
+      text-decoration:underline;
+    }
+
+    .nav-icon{
+      font-size:1.6rem;
+      color:var(--primary);
+    }
+
+    /* ---------- LOGIN LAYOUT ---------- */
+    .main-login{
+      min-height:calc(100vh - 72px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:2rem;
+    }
+
+    .login-card{
+      background:var(--card);
+      width:100%;
+      max-width:480px;
+      padding:2rem;
+      border-radius:var(--radius);
+      box-shadow:0 20px 40px rgba(15,23,42,.08);
+      text-align:center;
+    }
+
+    .login-card h1{
+      margin-bottom:1.5rem;
+      font-size:1.5rem;
+      color:var(--primary);
+    }
+
+    /* ---------- INPUTS ---------- */
+    .input-group{
+      position:relative;
+      margin-bottom:1rem;
+    }
+
+    .input-group i{
+      position:absolute;
+      top:50%;
+      left:12px;
+      transform:translateY(-50%);
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .input-group input{
+      width:100%;
+      padding:.7rem .75rem .7rem 2.2rem;
+      border:1px solid #d1d5db;
+      border-radius:8px;
+      font-size:.95rem;
+      outline:none;
+    }
+
+    .input-group input:focus{
+      border-color:var(--primary);
+      box-shadow:0 0 0 2px rgba(43,108,176,.15);
+    }
+
+    /* ---------- BOTÕES ---------- */
+    .btn{
+      width:100%;
+      padding:.7rem;
+      border-radius:10px;
+      font-size:.95rem;
+      cursor:pointer;
+      border:none;
+      margin-top:.5rem;
+    }
+
+    .btn.primary{
+      background:var(--primary);
+      color:#fff;
+    }
+
+    .btn.primary:hover{
+      background:var(--primary-hover);
+    }
+
+    .btn.secondary{
+      background:var(--secondary);
+      color:var(--text);
+    }
+
+    .btn.secondary:hover{
+      background:#cbd5e1;
+    }
+
+    /* ---------- RESPONSIVO ---------- */
+    @media (max-width:420px){
+      .login-card{
+        padding:1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">Galeria de Professores Inativos do Departamento de Biblioteconomia da UNIRIO</a>
+      <a href="index.html" class="nav-link">Página Inicial</a>
+      <a href="sobre.html" class="nav-link">Sobre</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html" class="nav-icon" title="Login/Cadastro">
+        <i class="fa fa-user-circle"></i>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main class="main-login">
+  <section class="login-card">
+    <h1>Login</h1>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Senha" required>
+      </div>
+
+      <button type="submit" class="btn primary">Entrar</button>
+      </button>
+    </form>
+  </section>
+</main>
+
+<script>
+  document.getElementById('cadastroBtn').onclick = function() {
+    window.location.href = 'cadastro.html';
+  };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>

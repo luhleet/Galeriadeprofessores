@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Painel do Administrador</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<style>
+body{
+  font-family:system-ui;
+  background:#f4f6fb;
+  padding:2rem;
+}
+.card{
+  background:#fff;
+  padding:1rem;
+  margin-bottom:1rem;
+  border-radius:8px;
+}
+input, textarea{
+  width:100%;
+  margin:.4rem 0;
+  padding:.5rem;
+}
+button{
+  background:#2b6cb0;
+  color:#fff;
+  border:none;
+  padding:.5rem 1rem;
+  border-radius:6px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Painel Administrativo</h1>
+<div id="lista"></div>
+
+<script>
+const supabase = supabase.createClient(
+  'https://SEU_PROJETO.supabase.co',
+  'PUBLIC_ANON_KEY'
+);
+
+// 🔐 Verificar admin
+async function checkAdmin(){
+  const { data: { user } } = await supabase.auth.getUser();
+  if(!user) location.href = 'login.html';
+
+  const { data } = await supabase
+    .from('profiles')
+    .select('role')
+    .eq('id', user.id)
+    .single();
+
+  if(data.role !== 'admin'){
+    alert('Acesso negado');
+    location.href = 'index.html';
+  }
+}
+
+// 📥 Listar professores
+async function carregarProfessores(){
+  const { data } = await supabase.from('professores').select('*');
+
+  const container = document.getElementById('lista');
+  container.innerHTML = '';
+
+  data.forEach(p => {
+    container.innerHTML += `
+      <div class="card">
+        <input value="${p.nome}" onchange="atualizar('${p.id}', 'nome', this.value)">
+        <input value="${p.area || ''}" onchange="atualizar('${p.id}', 'area', this.value)">
+        <textarea onchange="atualizar('${p.id}', 'bio', this.value)">${p.bio || ''}</textarea>
+        <input value="${p.email || ''}" onchange="atualizar('${p.id}', 'email', this.value)">
+      </div>
+    `;
+  });
+}
+
+// 💾 Atualizar campo
+async function atualizar(id, campo, valor){
+  await supabase
+    .from('professores')
+    .update({ [campo]: valor })
+    .eq('id', id);
+}
+
+checkAdmin();
+carregarProfessores();
+</script>
+
+</body>
+</html>
