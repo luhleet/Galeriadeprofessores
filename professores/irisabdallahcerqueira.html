@@ -14,6 +14,66 @@
             font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
             color:#111827;
         }
+           /* Container da navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(247, 248, 251, 0.98)
+  );
+  padding: 14px 28px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* Lista */
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  flex-shrink: 0;
+}
+
+.navbar-menu a {
+  color: #111827;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  color: var(--accent);
+}
+
+main {
+  padding: 1rem 0;
+}
+
+section {
+  margin-top: var(--gap);
+}
+
         body{
             margin:0;
             background:var(--bg);
@@ -147,9 +207,123 @@
         @media (max-width:420px){
             .content, .field .value{ text-align:left; }
         }
+          /*Formulário de depoimentos*/
+    /* ===============================
+   Depoimentos
+================================= */
+
+.depoimentos-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.depoimento-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.depoimento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.depoimento-nome {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.depoimento-data {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.depoimento-texto {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #111827;
+  white-space: pre-wrap;
+}
+
+/* Formulário de envio */
+
+.form-depoimento {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.form-depoimento input,
+.form-depoimento textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-depoimento input:focus,
+.form-depoimento textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(15, 102, 240, 0.15);
+}
+
+.form-depoimento button {
+  align-self: flex-start;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.form-depoimento button:hover {
+  background: #0c54c7;
+  transform: translateY(-1px);
+}
+
+/* Mensagens de feedback */
+
+#mensagem {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* Responsivo */
+
+@media (max-width: 420px) {
+  .depoimento-card {
+    padding: 12px;
+  }
+}
     </style>
 </head>
 <body>
+    <body>
+    <header>
+      <nav class="navbar" aria-label="Navegação principal">
+        <div class="navbar-container">
+          <a href="/" class="navbar-logo">Galeria de Professores Inativos do Departamento de Biblioteconomia da UNIRIO</a>
+          <ul class="navbar-menu" role="menubar">
+            <li role="none"><a role="menuitem" href="/index.html">Página Inicial</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+        <body>
     <main class="container" role="main" aria-labelledby="profile-name">
         <!-- Sidebar: foto + redes -->
         <aside class="sidebar" aria-label="Informações pessoais e redes sociais">
