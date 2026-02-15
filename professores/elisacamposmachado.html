@@ -419,6 +419,24 @@ section {
                     <div class="label">Depoimentos</div>
                     <div class="value" id="depoimentos">Depoimentos de colegas, alunos e gestores (use citações curtas ou links para vídeos).</div>
                 </div>
+                <div class="label">Depoimentos</div>
+            <div id="depoimentos" class="depoimentos-wrapper" aria-live="polite">Nenhum depoimento ainda.</div>
+          </div>
+
+          <form id="form-depoimento" class="form-depoimento" aria-label="Formulário de depoimento">
+            <div>
+              <label for="nome">Seu nome</label>
+              <input id="nome" type="text" name="nome" placeholder="Seu nome" required class="form-input">
+            </div>
+
+            <div>
+              <label for="comentario">Comentário</label>
+              <textarea id="comentario" name="comentario" placeholder="Escreva seu depoimento..." required rows="4" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Enviar depoimento</button>
+          </form>
+            </div>
             </div>
 
             <div class="section">
